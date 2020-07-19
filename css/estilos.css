@@ -6,7 +6,7 @@
 }
 
   body{
-  background: url('../IMG/fundo.jpg') no-repeat top center;
+  background: url('../img/fundo.jpg') no-repeat top center;
   background-attachment: fixed;
   background-size: cover;
   color: yellow;
