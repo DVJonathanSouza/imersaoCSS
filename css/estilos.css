@@ -1,0 +1,209 @@
+/* reset do CSS*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+  body{
+  background: url('../IMG/fundo.jpg') no-repeat top center;
+  background-attachment: fixed;
+  background-size: cover;
+  color: yellow;
+  font-family: 'Press Start 2P', cursive;
+  height: 100vh;
+  font-size: 12px;
+  }
+
+/* "breakpoint" se a tela tiver pelo menos 400px vai carregar */
+@media (min-width: 600px){
+    body{
+      font-size: 18px;
+    }
+  }
+
+/* "breakpoint" se a tela tiver pelo menos 1200px vai carregar */
+@media (min-width: 1200px){
+    body {
+      font-size: 20px;
+    }
+  }
+  
+  header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .menu{
+    background-color: DeepSkyBlue;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    top: 0;
+    z-index: 1;
+  }
+
+  .menu ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .menu li{
+    list-style: none;
+    font-family: 'Press Start 2P', cursive;
+  }
+
+  .menu a{
+    display: block;
+    padding: 10px 20px;
+  }
+  
+  .menu a:active,
+  .menu a:hover{
+    text-decoration: none;
+    background-color: yellow;
+    color: deepskyblue;
+  }
+
+
+  .titulo{
+    transform: scale(0.2) translateY(50vh);
+    opacity: 0;
+
+    animation: linear 1.3s animetitulo forwards;
+  }
+
+  @keyframes animetitulo{
+    100%{
+      transform: scale(1) translateY(0);
+    opacity: 1;
+    }
+
+  }
+  
+  a{
+    color: yellow;  
+    text-decoration: none;
+  }
+  
+  .site-title, 
+  .site-subtitle{
+    color: yellow;
+    text-align: center;  
+  }
+
+  .site-title{
+    font-size: 4em;
+    font-family: 'VT323', monospace;
+  }
+  
+  .site-subtitle{
+    font-family: 'Major Mono Display', monospace;
+    line-height: 1.8em;
+  }
+
+  .quemsou,
+  .contato,
+  .passatempo{
+    padding: 2em;
+    min-height: 100vh;
+  }
+
+  @media (min-width: 1200px){
+    .container{
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+
+  .contato h2{
+    font-family: 'Major Mono Display', monospace;
+    color: yellow;
+    margin-bottom: 1.5em;
+    font-size: 2em;  
+    background-size: auto 100vh;
+  }
+
+  .quemsou h2,
+  .passatempo h2{
+    font-family: 'Major Mono Display', monospace;
+    color: yellow;
+    margin-bottom: 1.5em;
+    font-size: 2em;
+  }
+
+  .quemsou a:hover{
+    text-shadow: 0px 0px 5px whitesmoke;
+  }
+
+  .quemsou p {
+    text-indent: 1.4em;
+    margin-bottom: 1.4em;
+
+  }
+
+  .quemsou .avatar {
+    float: right;
+    margin-left: 2em;
+  }
+
+  .quemsou .avatar img{
+    clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
+    border-radius: 5px;
+  }
+
+  .contato .icons{
+    text-align: center;
+  }
+
+  .contato a{
+    color: yellow;
+    font-size: 5em;
+  }
+
+  .contato a:active,
+  .contato a:hover{
+    text-decoration: none;
+    text-shadow: 0px 0px 5px whitesmoke;
+  }
+
+  .passatempo .grid{
+    display: grid;
+    gap: 2em;
+  }
+
+@media (min-width: 560px){
+    .passatempo .grid{
+    grid-template-columns: 240px 240px; 
+  }
+}
+
+@media (min-width: 880px){
+  .contato,
+  .passatempo .grid{
+  grid-template-columns: repeat(3, 260px);
+  align-content: center;
+  justify-content: center;
+  height: calc(100vh - 48px - 8em);
+  }
+}
+
+  .passatempo figure{
+    text-align: center;
+  }
+
+  .passatempo figure :hover{
+    transform: rotateY(180deg);
+  }
+  
+  .img-passatempo{
+    height: 180px;
+    width: 240px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 5px;
+    transition: transform 500ms, rotate 500ms;  
+  }
