@@ -1,11 +1,11 @@
 /* reset do CSS*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-  body{
+  body {
   background: url('../img/fundo.jpg') no-repeat top center;
   background-attachment: fixed;
   background-size: cover;
@@ -16,8 +16,8 @@
   }
 
 /* "breakpoint" se a tela tiver pelo menos 400px vai carregar */
-@media (min-width: 600px){
-    body{
+@media (min-width: 600px) {
+    body {
       font-size: 18px;
     }
   }
@@ -29,14 +29,14 @@
     }
   }
   
-  header{
+  header {
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  .menu{
+  .menu {
     background-color: DeepSkyBlue;
     position: fixed;
     top: 0px;
@@ -45,38 +45,38 @@
     z-index: 1;
   }
 
-  .menu ul{
+  .menu ul {
     display: flex;
     justify-content: space-around;
   }
   
-  .menu li{
+  .menu li {
     list-style: none;
     font-family: 'Press Start 2P', cursive;
   }
 
-  .menu a{
+  .menu a {
     display: block;
     padding: 10px 20px;
   }
   
   .menu a:active,
-  .menu a:hover{
+  .menu a:hover {
     text-decoration: none;
     background-color: yellow;
     color: deepskyblue;
   }
 
 
-  .titulo{
+  .titulo {
     transform: scale(0.2) translateY(50vh);
     opacity: 0;
 
     animation: linear 1.3s animetitulo forwards;
   }
 
-  @keyframes animetitulo{
-    100%{
+  @keyframes animetitulo {
+    100% {
       transform: scale(1) translateY(0);
     opacity: 1;
     }
@@ -89,37 +89,37 @@
   }
   
   .site-title, 
-  .site-subtitle{
+  .site-subtitle {
     color: yellow;
     text-align: center;  
   }
 
-  .site-title{
+  .site-title {
     font-size: 4em;
     font-family: 'VT323', monospace;
   }
   
-  .site-subtitle{
+  .site-subtitle {
     font-family: 'Major Mono Display', monospace;
     line-height: 1.8em;
   }
 
   .quemsou,
   .contato,
-  .passatempo{
+  .passatempo {
     padding: 2em;
     min-height: 100vh;
   }
 
-  @media (min-width: 1200px){
-    .container{
+  @media (min-width: 1200px) {
+    .container {
       max-width: 1200px;
       margin-left: auto;
       margin-right: auto;
     }
   }
 
-  .contato h2{
+  .contato h2 {
     font-family: 'Major Mono Display', monospace;
     color: yellow;
     margin-bottom: 1.5em;
@@ -128,14 +128,14 @@
   }
 
   .quemsou h2,
-  .passatempo h2{
+  .passatempo h2 {
     font-family: 'Major Mono Display', monospace;
     color: yellow;
     margin-bottom: 1.5em;
     font-size: 2em;
   }
 
-  .quemsou a:hover{
+  .quemsou a:hover {
     text-shadow: 0px 0px 5px whitesmoke;
   }
 
@@ -150,40 +150,40 @@
     margin-left: 2em;
   }
 
-  .quemsou .avatar img{
+  .quemsou .avatar img {
     clip-path: polygon(15% 0, 100% 0%, 85% 100%, 0% 100%);
     border-radius: 5px;
   }
 
-  .contato .icons{
+  .contato .icons {
     text-align: center;
   }
 
-  .contato a{
+  .contato a {
     color: yellow;
     font-size: 5em;
   }
 
   .contato a:active,
-  .contato a:hover{
+  .contato a:hover {
     text-decoration: none;
     text-shadow: 0px 0px 5px whitesmoke;
   }
 
-  .passatempo .grid{
+  .passatempo .grid {
     display: grid;
     gap: 2em;
   }
 
-@media (min-width: 560px){
-    .passatempo .grid{
+@media (min-width: 560px) {
+    .passatempo .grid {
     grid-template-columns: 240px 240px; 
   }
 }
 
-@media (min-width: 880px){
+@media (min-width: 880px) {
   .contato,
-  .passatempo .grid{
+  .passatempo .grid {
   grid-template-columns: repeat(3, 260px);
   align-content: center;
   justify-content: center;
@@ -191,15 +191,15 @@
   }
 }
 
-  .passatempo figure{
+  .passatempo figure {
     text-align: center;
   }
 
-  .passatempo figure :hover{
+  .passatempo figure :hover {
     transform: rotateY(180deg);
   }
   
-  .img-passatempo{
+  .img-passatempo {
     height: 180px;
     width: 240px;
     object-fit: cover;
